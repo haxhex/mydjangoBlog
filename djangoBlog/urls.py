@@ -12,6 +12,7 @@ urlpatterns = [
     path('', views.home),
     # if we go to article next urls will be in this path
     path('articles/', include('articles.urls')),
+    path('accounts/', include('accounts.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
